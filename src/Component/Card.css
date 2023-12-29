@@ -1,0 +1,92 @@
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 50px;
+
+}
+
+.cards {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: aqua;
+    border: 15px gray;
+    border-style: ridge;
+    border-radius: 20px;
+    background-color: beige;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.cards:hover {
+    position: relative;
+    top: -15px;
+    cursor: pointer;
+
+}
+
+.image_box img {
+    width: 150px;
+    height: 200px;
+}
+
+.details p:nth-child(1) {
+    font-weight: bold;
+}
+
+.details p:nth-child(2) {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.details p:nth-child(3) {
+    font-weight: bold;
+    color: grey;
+}
+
+.details button {
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    outline: none;
+    height: 40px;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+
+
+@media screen and (max-width:1200px) {
+    section {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width:800px) {
+    section {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media screen and (max-width:400px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+        justify-content: space-evenly
+    }
+
+    .cards {
+        width: 200px;
+    }
+}
